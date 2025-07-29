@@ -22,5 +22,9 @@ public class StudentPool {
         return name;
     }
 
-    public String display
+    public void displayStudentInfor(){
+        for(int i = 0; i < std.size(); i++){
+            System.out.println(std.get(i));
+        }
+    }
 }

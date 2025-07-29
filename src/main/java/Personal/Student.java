@@ -26,4 +26,8 @@ public class Student {
     public String getterName(){
         return name;
     }
+    @Override
+    public String toString() {
+        return "รหัส: " + id + ", ชื่อ: " + name;
+    }
 }
