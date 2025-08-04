@@ -24,8 +24,8 @@ public class HelloController {
     @FXML
     protected void onRegisterButonClick() {
         Student s = new Student();
-        s.setterID(txtID.getText());
-        s.setterName(txtName.getText());
+       // s.setterID(txtID.getText());
+       // s.setterName(txtName.getText());
         s.setterScore(Integer.parseInt(txtScore.getText()));
 
         StudentPool sPool = new StudentPool();

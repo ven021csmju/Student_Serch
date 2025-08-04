@@ -10,17 +10,9 @@ public class StudentPool {
     System.out.println("Add data student number "+std.size()+" success" );
     }
 
-    public String onSerchIDButonClick(String id) {
-        String name = "";
-        for (Student s : std) //เอา std ลูป ใส่เข้าไปใน s
-        {
-            if (s.getterID().equals(id)) {
-                name = s.getterName();
-                break;
-            }
-        }
-        return name;
-    }
+//    public String onSerchIDButonClick(String id) {
+//
+//    }
 
     public void displayStudentInfor(){
         for(int i = 0; i < std.size(); i++){
