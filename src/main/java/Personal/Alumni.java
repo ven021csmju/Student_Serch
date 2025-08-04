@@ -2,11 +2,11 @@ package Personal;
 
 public class Alumni extends Person {
     private int salary;
+    private int persenBonus;
 
     public String showInfo(){
         String info = null;
         info = "ID: " + getId() + ", Name: " + getName();
-        System.out.println(info);
         return info;
     }
 
@@ -16,5 +16,17 @@ public class Alumni extends Person {
     }
     public int showOccupation() {
         return salary;
+    }
+
+    public void setPersenBonus(int persenBonus){
+        this.persenBonus = persenBonus;
+    }
+    public int getPersenBonus() {
+        return persenBonus;
+    }
+
+    public int computeBonus() {
+        int Bonus = salary * persenBonus / 100;
+        return Bonus;
     }
 }

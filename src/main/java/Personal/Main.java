@@ -4,6 +4,7 @@ import java.util.Scanner;
 public class Main {
     public  static void  main(String[] args){
         Scanner scanner = new Scanner(System.in);
+
 //        Student stds = new Student();
 //
 //
@@ -47,8 +48,19 @@ public class Main {
 //        System.out.println("Alumni Name: " + ven.showOccupation());
 
         Alumni s = new Alumni();
-        s.setName("John Doe");
-        s.setId("12345");
-        s.showInfo();
+        String s1 = s.showInfo();
+
+
+       Student std = new Student();
+       System.out.print("Enter your score: ");
+       std.setterScore(scanner.nextInt());
+       System.out.println(std.computeGrade());
+
+        Alumni ven = new Alumni();
+        System.out.print("Enter your salary: ");
+        ven.setOccupation(scanner.nextInt());
+        System.out.print("Enter your Bonus(%): ");
+        ven.setPersenBonus(scanner.nextInt());
+        System.out.println("Bonus: " + ven.computeBonus());
     }
 }
